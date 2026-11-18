@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Festa Hot Wheels – Heytor Taylor 7 anos</title>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="carro" viewBox="0 0 120 50">
+    <path d="M4 36Q6 25 28 23L44 8Q48 5 56 5H80Q88 6 94 19L110 23Q118 25 118 36Z" fill="currentColor"/>
+    <path d="M47 10H58V21H38ZM64 10H80L88 21H64Z" fill="#cfe9ff"/>
+    <path d="M8 31H114" stroke="#fff" stroke-width="3" opacity=".8"/>
+    <circle cx="30" cy="37" r="10" fill="#111"/><circle cx="30" cy="37" r="4" fill="#ccc"/>
+    <circle cx="92" cy="37" r="10" fill="#111"/><circle cx="92" cy="37" r="4" fill="#ccc"/>
+  </symbol>
+</svg>
+
+<div class="speed" id="speed" aria-hidden="true"></div>
+<canvas id="fogo" aria-hidden="true"></canvas>
+
+<main class="wrap">
+  <span class="star s1">★</span><span class="star s2">★</span><span class="star s3">★</span>
+  <p class="tag">🏁 FESTA HOT WHEELS 🏁</p>
+  <div class="logo">HOT WHEELS</div>
+  <h1>Heytor<br>Taylor</h1>
+  <p class="age">7 <small>ANOS</small></p>
+
+  <div class="track" aria-hidden="true">
+    <div class="car c1"><svg><use href="#carro"/></svg></div>
+    <div class="car c2"><svg><use href="#carro"/></svg></div>
+    <div class="car c3"><svg><use href="#carro"/></svg></div>
+  </div>
+  <div class="flag"></div>
+
+  <section class="info">
+    <div class="row"><b>📅 DATA</b>29 de novembro de 2026</div>
+    <div class="row"><b>⏰ HORÁRIO</b>17h</div>
+    <div class="row"><b>📍 LOCAL</b>Restaurante Recanto do Pajuçara</div>
+  </section>
+
+  <p class="hint">Faltam para a largada:</p>
+  <div class="count">
+    <div id="d">0<span>DIAS</span></div>
+    <div id="h">0<span>HORAS</span></div>
+    <div id="m">0<span>MIN</span></div>
+    <div id="s">0<span>SEG</span></div>
+  </div>
+
+  <p class="slogan">Prepare seus motores e venha comemorar!</p>
+
+  <section class="panel">
+    <div>🏆 Confirme sua presença</div>
+    <input id="nome" type="text" placeholder="Seu nome" autocomplete="name">
+    <select id="qtd" aria-label="Quantidade de pessoas">
+      <option value="1">1 pessoa</option><option value="2">2 pessoas</option><option value="3">3 pessoas</option>
+      <option value="4">4 pessoas</option><option value="5">5 pessoas</option><option value="6">6 pessoas</option>
+    </select>
+    <div class="actions">
+      <a class="btn g" id="zap" href="#" target="_blank" rel="noopener">Confirmar no WhatsApp</a>
+    </div>
+    <p class="hint" id="aviso"></p>
+  </section>
+
+  <div class="actions">
+    <a class="btn y" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=restaurante+Recanto+do+Paj%C3%BA%C3%A7ara">Ver no mapa</a>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
